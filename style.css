@@ -1,0 +1,55 @@
+﻿:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172554;
+  background: #eff6ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 680px);
+  padding: clamp(28px, 6vw, 56px);
+  border: 1px solid #dbeafe;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgb(30 64 175 / 10%);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.2; }
+.intro { margin: 18px 0 28px; color: #475569; line-height: 1.6; }
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover { background: #1d4ed8; }
+button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+.status { margin: 18px 0 0; color: #64748b; }
+.status.success { color: #15803d; font-weight: 700; }
+
+.clock { margin: 28px 0 0; padding-top: 18px; border-top: 1px solid #e2e8f0; color: #64748b; text-align: center; font-size: 0.9rem; }
+
