@@ -28,6 +28,9 @@ jobs:
           test -f style.css
           test -f script.js
 
+      - name: Verify page title
+        run: grep -qiE '<title>[^<]+</title>' index.html
+
       - name: Check JavaScript syntax
         run: node --check script.js
 
